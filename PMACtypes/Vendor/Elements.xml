@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01002A5E8BCBEE5E4A5CAE87165FE26AE9DD" Name="Vendor" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{555d00a6-61e5-4437-ba6c-9fcb452c1469}" DisplayName="Partner Id" Required="FALSE" Name="PartnerId" />
+      <FieldRef ID="{7eea0e82-9c92-4526-98c3-02b765945b8d}" DisplayName="Partner Name" Required="FALSE" Name="Partner Name" />
+      <FieldRef ID="{989263ed-40cd-4fc6-814b-c45fd57030b3}" DisplayName="VAT Reg No." Required="True" Name="VAT Reg No" />
+      <FieldRef ID="{8cc81395-a847-4ae9-81aa-76e24b989902}" DisplayName="Email" Required="FALSE" Name="Email" />
+      <FieldRef ID="{d5d43b1d-0006-49cb-bbca-a4055c7ea3ad}" DisplayName="Type" Required="FALSE" Name="PType" />
+      <FieldRef ID="{ba3252db-b751-4a1b-af52-a3e8586b24f1}" DisplayName="Classification" Required="FALSE" Name="PClassification" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

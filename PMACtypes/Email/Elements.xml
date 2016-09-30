@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8cc81395-a847-4ae9-81aa-76e24b989902}"
+       Name="Email"
+       DisplayName="Email"
+       Type="Text"
+       Required="FALSE"
+       Group="PMA Site Columns">
+  </Field>
+</Elements>

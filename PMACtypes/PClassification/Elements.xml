@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ba3252db-b751-4a1b-af52-a3e8586b24f1}"
+       Name="PClassification"
+       DisplayName="Classification"
+       Type="Text"
+       Required="FALSE"
+       Group="PMA Site Columns">
+  </Field>
+</Elements>

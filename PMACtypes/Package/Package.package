@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="3c50351b-b400-4d0a-a239-1658aeaf0736" 
+        solutionId="3c50351b-b400-4d0a-a239-1658aeaf0736" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="PMACtypes"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="62b7a5b8-079c-4f13-9124-8cd2f6955b8c" />
+  </features>
+</package>

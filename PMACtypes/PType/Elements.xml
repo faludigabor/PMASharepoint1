@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d5d43b1d-0006-49cb-bbca-a4055c7ea3ad}"
+       Name="PType"
+       DisplayName="Type"
+       Type="Choice"
+       Required="FALSE"
+       Group="PMA Site Columns">
+    <CHOICES>
+      <CHOICE>Customer</CHOICE>
+      <CHOICE>Vendor</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

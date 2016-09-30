@@ -1,0 +1,3 @@
+c:\WorkSpace\PMAWCF\PMACtypes\bin\Debug\PMACtypes.pdb
+c:\WorkSpace\PMAWCF\PMACtypes\obj\Debug\PMACtypes.dll
+c:\WorkSpace\PMAWCF\PMACtypes\obj\Debug\PMACtypes.pdb

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="PartnersList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PartnersList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100ED0974C0DD7846DDB9AF279276C6C555" Name="Customer" Group="Custom Content Types" Description="Customer Content Type for PMA" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{555d00a6-61e5-4437-ba6c-9fcb452c1469}" DisplayName="Partner Id" Required="FALSE" Name="PartnerId" /><FieldRef ID="{7eea0e82-9c92-4526-98c3-02b765945b8d}" DisplayName="Partner Name" Required="FALSE" Name="Partner Name" /><FieldRef ID="{989263ed-40cd-4fc6-814b-c45fd57030b3}" DisplayName="VAT Reg No." Required="True" Name="VAT Reg No" /><FieldRef ID="{8cc81395-a847-4ae9-81aa-76e24b989902}" DisplayName="Email" Required="FALSE" Name="Email" /><FieldRef ID="{e4f2485e-974c-40b3-bca2-df07dfedffcf}" DisplayName="Balance" Required="FALSE" Name="Balance" /><FieldRef ID="{d5d43b1d-0006-49cb-bbca-a4055c7ea3ad}" DisplayName="Type" Required="FALSE" Name="PType" /></FieldRefs></ContentType><ContentType ID="0x01002A5E8BCBEE5E4A5CAE87165FE26AE9DD" Name="Vendor" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{555d00a6-61e5-4437-ba6c-9fcb452c1469}" DisplayName="Partner Id" Required="FALSE" Name="PartnerId" /><FieldRef ID="{7eea0e82-9c92-4526-98c3-02b765945b8d}" DisplayName="Partner Name" Required="FALSE" Name="Partner Name" /><FieldRef ID="{989263ed-40cd-4fc6-814b-c45fd57030b3}" DisplayName="VAT Reg No." Required="True" Name="VAT Reg No" /><FieldRef ID="{8cc81395-a847-4ae9-81aa-76e24b989902}" DisplayName="Email" Required="FALSE" Name="Email" /><FieldRef ID="{d5d43b1d-0006-49cb-bbca-a4055c7ea3ad}" DisplayName="Type" Required="FALSE" Name="PType" /><FieldRef ID="{ba3252db-b751-4a1b-af52-a3e8586b24f1}" DisplayName="Classification" Required="FALSE" Name="PClassification" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{555d00a6-61e5-4437-ba6c-9fcb452c1469}" Name="PartnerId" DisplayName="Partner Id" Type="Text" Required="FALSE" Group="PMA Site Columns"></Field><Field ID="{7eea0e82-9c92-4526-98c3-02b765945b8d}" Name="Partner Name" DisplayName="Partner Name" Type="Text" Required="FALSE" Group="PMA Site Columns"></Field><Field ID="{989263ed-40cd-4fc6-814b-c45fd57030b3}" Name="VAT Reg No" DisplayName="VAT Reg No." Type="Text" Required="True" Group="PMA Site Columns"></Field><Field ID="{8cc81395-a847-4ae9-81aa-76e24b989902}" Name="Email" DisplayName="Email" Type="Text" Required="FALSE" Group="PMA Site Columns"></Field><Field ID="{e4f2485e-974c-40b3-bca2-df07dfedffcf}" Name="Balance" DisplayName="Balance" Type="Number" Required="FALSE" Group="PMA Site Columns"></Field><Field ID="{d5d43b1d-0006-49cb-bbca-a4055c7ea3ad}" Name="PType" DisplayName="Type" Type="Choice" Required="FALSE" Group="PMA Site Columns"><CHOICES><CHOICE>Customer</CHOICE><CHOICE>Vendor</CHOICE></CHOICES></Field><Field ID="{ba3252db-b751-4a1b-af52-a3e8586b24f1}" Name="PClassification" DisplayName="Classification" Type="Text" Required="FALSE" Group="PMA Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="All Partners" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="PartnerId" /><FieldRef Name="Partner Name" /><FieldRef Name="VAT Reg No" /><FieldRef Name="Email" /><FieldRef Name="Balance" /><FieldRef Name="PType" /><FieldRef Name="PClassification" /></ViewFields>
+        <Query>
+          
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+          
+        </Query>
+        
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="51442906-9ea7-48b9-9d3e-897c3f5988fe" DisplayName="Customers" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Customers.aspx"><ViewFields><FieldRef Name="ID" /><FieldRef Name="PartnerId" /><FieldRef Name="Partner Name" /><FieldRef Name="VAT Reg No" /><FieldRef Name="Email" /><FieldRef Name="Balance" /></ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="Ptype" />
+              <Value Type="Text" >Customer</Value>
+            </Eq>
+          </Where>
+        </Query>
+        
+        <Toolbar Type="Standard" /><XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink></View>
+      
+      <View BaseViewID="3" Name="8a396941-af36-4cbd-bca1-b4a2cf716d3d" DisplayName="Vendors" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Vendors.aspx"><ViewFields><FieldRef Name="ID" /><FieldRef Name="PartnerId" /><FieldRef Name="Partner Name" /><FieldRef Name="VAT Reg No" /><FieldRef Name="Email" /><FieldRef Name="Balance" /><FieldRef Name="PClassification" /></ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="Ptype" />
+              <Value Type="Text" >Vendor</Value>
+            </Eq>
+          </Where>
+        </Query>
+        
+        <Toolbar Type="Standard" /><XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink></View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

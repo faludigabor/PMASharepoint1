@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e4f2485e-974c-40b3-bca2-df07dfedffcf}"
+       Name="Balance"
+       DisplayName="Balance"
+       Type="Number"
+       Required="FALSE"
+       Group="PMA Site Columns">
+  </Field>
+</Elements>

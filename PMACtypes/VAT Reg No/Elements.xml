@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{989263ed-40cd-4fc6-814b-c45fd57030b3}"
+       Name="VAT Reg No"
+       DisplayName="VAT Reg No."
+       Type="Text"
+       Required="True"
+       Group="PMA Site Columns">
+  </Field>
+</Elements>

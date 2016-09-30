@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{555d00a6-61e5-4437-ba6c-9fcb452c1469}"
+       Name="PartnerId"
+       DisplayName="Partner Id"
+       Type="Text"
+       Required="FALSE"
+       Group="PMA Site Columns">
+  </Field>
+</Elements>

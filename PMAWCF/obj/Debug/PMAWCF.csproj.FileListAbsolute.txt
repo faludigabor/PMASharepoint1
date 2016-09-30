@@ -1,0 +1,9 @@
+c:\workspace\PMAWCF\PMAWCF\bin\PMAWCF.dll
+c:\workspace\PMAWCF\PMAWCF\bin\PMAWCF.pdb
+c:\workspace\PMAWCF\PMAWCF\obj\Debug\PMAWCF.csprojResolveAssemblyReference.cache
+c:\workspace\PMAWCF\PMAWCF\obj\Debug\PMAWCF.dll
+c:\workspace\PMAWCF\PMAWCF\obj\Debug\PMAWCF.pdb
+c:\workspace\PMAWCF\PMAWCF\bin\EntityFramework.dll
+c:\workspace\PMAWCF\PMAWCF\bin\EntityFramework.SqlServer.dll
+c:\workspace\PMAWCF\PMAWCF\bin\EntityFramework.xml
+c:\workspace\PMAWCF\PMAWCF\bin\EntityFramework.SqlServer.xml
